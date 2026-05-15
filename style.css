@@ -11,11 +11,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .menu-container {
+    width: 100%;
     background-color: var(--primary-color);
-    padding: 1rem;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .menu-lista {
@@ -31,15 +37,17 @@
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    padding: 7px;
-    transition: 0.3s;
+    font-size: 1rem;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    display: block;
 }
 
 .menu-lista a:hover {
     background-color: var(--secondary-color);
-    border-radius: 5px;
+    transform: translateY(-2px);
 }
-
 .dropdown {
     position: relative;
 }
@@ -124,6 +132,10 @@ body {
     background-color: var(--background-color);
 }
 
+html{
+    font-size: 17px;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -183,7 +195,7 @@ body {
     background: linear-gradient(to bottom, #f4fff6, #e8f5ea);
 }
 
-.abou-grid {
+.about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
@@ -263,7 +275,7 @@ body {
     padding: 80px 0;
 }
 
-.second-title {
+.section-title {
     text-align: center;
     margin-bottom: 50px;
     font-size: 2.5rem;
@@ -293,4 +305,169 @@ body {
 .card .icon {
     font-size: 3rem;
     margin-bottom: 15px;
+}
+
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-color);
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.texto{
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+.negrito{
+    font-weight: bold;
+    color:#006E15
+}
+.comp_verde{
+    width: 500px;
+    height: 300px; 
+    padding-top: 30px;
+}
+.fonte{
+    font-family: 'Poppins', sans-serif;
+}
+.lista{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.textolista{
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+table{
+    padding: 10px;
+}
+td, th{
+    border: 1px solid #006E15; 
+    text-align: center;
+    padding: 5px;
+}
+
+.pag_tecno {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+.pag_tecno h1 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    border-bottom: 3px solid var(--secondary-color);
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.pag_tecno h2 {
+    font-size: 1.2rem;
+    color: #444;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.pag_tecno h3, 
+.pag_tecno p {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.pag_tecno table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px; 
+    margin: 20px 0;
+}
+
+.pag_tecno td {
+    background-color: #ffffff;
+    padding: 12px 20px;
+    border-left: 5px solid var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 0 8px 8px 0;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+
+.pag_tecno ul {
+    list-style-position: inside;
+    padding: 20px;
+    background: #eef7ee; 
+    border-radius: 10px;
+}
+
+.pag_tecno li {
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #1a4a1c;
+}
+
+.pag_tecno br {
+    content: "";
+    margin: 10px 0;
+    display: block;
+}
+
+.conteudo-principal {
+    max-width: 1100px;
+    margin: 40px auto; 
+    padding: 0 20px;   
+}
+
+.conteudo-principal h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    border-left: 8px solid var(--secondary-color);
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.conteudo-principal h2, .conteudo-principal h3 {
+    font-weight: 400;
+    color: #333;
+    line-height: 1.6;
+}
+
+.conteudo-principal table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.conteudo-principal td {
+    background-color: #fff;
+    padding: 15px;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.conteudo-principal ul {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    list-style-type: circle;
+}
+
+.centralizar{
+    text-align: center;
 }
